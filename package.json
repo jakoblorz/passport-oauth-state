@@ -1,0 +1,38 @@
+{
+  "name": "@jakoblorz/passport-oauth-state",
+  "version": "1.0.0",
+  "description": "Fixes passport.js broken security on passport-oauth strategies when passport is used sessionless",
+  "main": "index.js",
+  "scripts": {
+    "prepack": "yarn run prepack:babel && yarn run prepack:flow",
+    "prepack:babel": "babel src/ -d dist",
+    "prepack:flow": "flow-copy-source src dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "8.11"
+  },
+  "repository": "git@github.com:jakoblorz/passport-oauth-state.git",
+  "author": "Jakob Lorz <jakob@lorz.org>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-flow-strip-types": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^4.14.0",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "flow-bin": "^0.71.0",
+    "flow-copy-source": "^2.0.9",
+    "flow-typed": "^2.4.0",
+    "koa": "^2.11.0",
+    "prettier": "1.8.2"
+  }
+}
